@@ -9,9 +9,9 @@ export default function WildernessTreks() {
   return (
     <main>
       <Navbar />
-      <div>
+      <div className="bg-black text-white">
         {/* Hero Section */}
-        <div className="relative h-[70vh] min-h-[500px]">
+        <div className="relative h-[70vh] min-h-[500px] bg-black text-white">
           <Image
             src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
             alt="Wilderness Treks"
@@ -31,7 +31,7 @@ export default function WildernessTreks() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 py-16 bg-black text-white">
           {/* Introduction */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-6">Discover Nature's Hidden Sanctuaries</h2>
@@ -82,8 +82,9 @@ export default function WildernessTreks() {
           {/* Featured Treks */}
           <div id="treks" className="pt-8 mb-16">
             <h2 className="text-3xl font-bold mb-8 text-center">Our Featured Wilderness Treks</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
               <TrekCard
+              
                 title="Valley of Flowers Expedition"
                 image="https://images.unsplash.com/photo-1455156218388-5e61b526818b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                 location="Uttarakhand"
@@ -151,7 +152,7 @@ export default function WildernessTreks() {
           </div>
 
           {/* Equipment & Preparation */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-16">
+          <div className="backdrop-blur-sm  rounded-xl p-8 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-4">Preparation & Equipment</h2>
@@ -289,7 +290,7 @@ function TrekCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-black/50 backdrop-blur-sm  text-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64">
         <Image
           src={image}

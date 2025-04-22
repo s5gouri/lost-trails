@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const CtaSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-black text-white">
       <div
         className="absolute inset-0 z-0"
         style={{

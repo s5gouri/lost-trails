@@ -22,7 +22,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white/90 backdrop-blur-sm fixed w-full z-50 shadow-sm">
+    <nav className="bg-black/90 text-white backdrop-blur-sm fixed w-full z-50 shadow-sm">
       <div className="container mx-auto py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="font-bold text-xl text-primary">
@@ -34,13 +34,13 @@ const Navbar = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">Experiences</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="bg-black">Experiences</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
+                    <ul className="grid bg-black text-white  gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
                       <li className="row-span-3">
                         <NavigationMenuLink asChild>
                           <a
-                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-green-500/50 to-green-700/50 p-6 no-underline outline-none focus:shadow-md"
+                            className=" flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-green-500/50 to-green-700/50 p-6 no-underline outline-none focus:shadow-md"
                             href="/experiences"
                           >
                             <div className="mb-2 text-lg font-medium text-white">
@@ -66,21 +66,21 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/destinations" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-black text-white`}>
                       Destinations
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-black text-white`}>
                       Who We Are
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/blog" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-black text-white`}>
                       Blog
                     </NavigationMenuLink>
                   </Link>
@@ -93,7 +93,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="lg:hidden">
+          <div className="lg:hidden ">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon">
@@ -115,8 +115,8 @@ const Navbar = () => {
                   </svg>
                 </Button>
               </SheetTrigger>
-              <SheetContent>
-                <div className="flex flex-col space-y-4 mt-8">
+              <SheetContent className="bg-black text-white">
+                <div className="flex flex-col space-y-4 mt-8 bg-black text-white ">
                   <Link
                     href="/experiences"
                     className="text-lg font-medium"
@@ -195,7 +195,7 @@ const ListItem = ({
 
 function navigationMenuTriggerStyle() {
   return cn(
-    "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+    "group  inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
   );
 }
 

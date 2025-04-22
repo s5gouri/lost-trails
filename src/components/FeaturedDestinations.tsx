@@ -60,7 +60,7 @@ const destinations = [
 
 const FeaturedDestinations = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-black text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <motion.h2
@@ -112,9 +112,9 @@ const FeaturedDestinations = () => {
                   <p className="text-sm text-gray-200">{destination.location}</p>
                 </div>
               </div>
-              <div className="p-5 bg-white">
+              <div className="p-5 bg-white/80">
                 <p className="text-gray-700 mb-4">{destination.description}</p>
-                <Button asChild variant="outline" className="w-full">
+                <Button asChild variant="outline" className="w-full bg-black text-white">
                   <Link href={destination.link}>See Details</Link>
                 </Button>
               </div>
