@@ -9,9 +9,9 @@ export default function CoastalExperiences() {
   return (
     <main>
       <Navbar />
-      <div>
+      <div className="bg-black text-white">
         {/* Hero Section */}
-        <div className="relative h-[70vh] min-h-[500px]">
+        <div className="relative h-[70vh] min-h-[500px] ">
           <Image
             src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
             alt="Hidden Beaches"
@@ -149,7 +149,7 @@ export default function CoastalExperiences() {
           </div>
 
           {/* Marine Life Section */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-16">
+          <div className="bg-black text-white rounded-xl p-8 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
@@ -266,7 +266,7 @@ function CoastalExperienceCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-black text-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64">
         <Image
           src={image}

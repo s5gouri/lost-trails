@@ -8,14 +8,14 @@ export default function About() {
   return (
     <main>
       <Navbar />
-      <div className="pt-24 pb-16">
+      <div className="pt-24 pb-16 bg-black text-white">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               About Lost Trails
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-400">
               Venturing beyond the known, discovering the untold stories of our beautiful country
             </p>
           </div>
@@ -24,13 +24,13 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <h2 className="text-3xl font-bold mb-4">Our Story</h2>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-gray-400 mb-4">
                 Lost Trails was born from a simple realization: some of the most extraordinary places in our country remain hidden from the common traveler's path.
               </p>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-gray-400 mb-4">
                 Founded by a group of passionate explorers who spent years documenting less-traveled regions, we made it our mission to open these experiences to those seeking authentic connections with nature, culture, and themselves.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-400">
                 Since 2018, we've been carefully curating small-group expeditions that balance adventure with sustainability, immersion with respect, and discovery with preservation.
               </p>
             </div>
@@ -45,7 +45,7 @@ export default function About() {
           </div>
 
           {/* Our Values */}
-          <div className="bg-gray-50 py-16 px-8 rounded-xl mb-20">
+          <div className="bg-black text-white py-16 px-8 rounded-xl mb-20">
             <h2 className="text-3xl font-bold mb-8 text-center">Our Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -127,7 +127,7 @@ export default function About() {
           {/* CTA */}
           <div className="bg-primary/10 rounded-xl p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Join Our Adventures?</h2>
-            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
               Become part of a community that's redefining exploration in our country. Request an invite to one of our upcoming expeditions.
             </p>
             <Button asChild size="lg">

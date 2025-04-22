@@ -6,7 +6,7 @@ export default function RequestInvite() {
   return (
     <main>
       <Navbar />
-      <div className="pt-24 pb-16 bg-gray-50">
+      <div className="pt-24 pb-16 bg-black text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-bold mb-4 text-center">

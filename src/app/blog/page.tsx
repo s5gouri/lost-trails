@@ -8,14 +8,14 @@ export default function Blog() {
   return (
     <main>
       <Navbar />
-      <div className="pt-24 pb-16">
+      <div className="pt-24 pb-16 bg-black text-white">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Trail Stories
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-400">
               Insights, tales, and wisdom from our explorations of the road less traveled
             </p>
           </div>
@@ -64,12 +64,12 @@ export default function Blog() {
           {/* Blog Categories */}
           <div className="mb-12">
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button variant="outline" className="rounded-full">All Posts</Button>
-              <Button variant="outline" className="rounded-full">Adventure Stories</Button>
-              <Button variant="outline" className="rounded-full">Travel Tips</Button>
-              <Button variant="outline" className="rounded-full">Cultural Insights</Button>
-              <Button variant="outline" className="rounded-full">Sustainability</Button>
-              <Button variant="outline" className="rounded-full">Photography</Button>
+              <Button variant="outline" className="rounded-full bg-black text-white">All Posts</Button>
+              <Button variant="outline" className="rounded-full bg-black text-white">Adventure Stories</Button>
+              <Button variant="outline" className="rounded-full bg-black text-white">Travel Tips</Button>
+              <Button variant="outline" className="rounded-full bg-black text-white">Cultural Insights</Button>
+              <Button variant="outline" className="rounded-full bg-black text-white">Sustainability</Button>
+              <Button variant="outline" className="rounded-full bg-black text-white">Photography</Button>
             </div>
           </div>
 
@@ -198,7 +198,7 @@ function BlogPostCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+    <div className="bg-black text-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative h-56">
         <Image
           src={image}
@@ -217,7 +217,7 @@ function BlogPostCard({
           <span>{date}</span>
         </div>
         <p className="text-gray-600 mb-6 flex-grow">{excerpt}</p>
-        <Button asChild variant="outline" className="mt-auto">
+        <Button asChild variant="outline" className="mt-auto bg-black text-white">
           <Link href={link}>Read Article</Link>
         </Button>
       </div>

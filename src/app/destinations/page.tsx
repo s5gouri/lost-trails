@@ -8,14 +8,14 @@ export default function Destinations() {
   return (
     <main>
       <Navbar />
-      <div className="pt-24 pb-16">
+      <div className="pt-24 pb-16 bg-black text-white">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Destinations
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-400">
               Discover the lesser-known treasures of our country that we've carefully selected for your extraordinary adventures
             </p>
           </div>
@@ -25,37 +25,37 @@ export default function Destinations() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <Button
                 variant="outline"
-                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary"
+                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary bg-black text-white"
               >
                 All Destinations
               </Button>
               <Button
                 variant="outline"
-                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary"
+                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary bg-black text-white"
               >
                 Mountains & Valleys
               </Button>
               <Button
                 variant="outline"
-                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary"
+                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary bg-black text-white"
               >
                 Coastal Havens
               </Button>
               <Button
                 variant="outline"
-                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary"
+                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary bg-black text-white"
               >
                 Forests & Wildlife
               </Button>
               <Button
                 variant="outline"
-                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary"
+                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary bg-black text-white"
               >
                 Cultural Regions
               </Button>
               <Button
                 variant="outline"
-                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary"
+                className="py-6 text-lg font-medium rounded-lg hover:bg-primary/10 hover:text-primary bg-black text-white"
               >
                 Desert & Arid Zones
               </Button>
@@ -139,17 +139,17 @@ export default function Destinations() {
           </div>
 
           {/* Map Section */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-16">
+          <div className="bg-black text-white rounded-xl p-8 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-4">Exploring the Unexplored</h2>
-                <p className="text-lg text-gray-700 mb-6">
+                <p className="text-lg text-gray-400 mb-6">
                   Our destinations are carefully selected to showcase the incredible diversity of landscapes, cultures, and ecosystems that remain off the beaten tourist path.
                 </p>
-                <p className="text-lg text-gray-700 mb-6">
+                <p className="text-lg text-gray-400 mb-6">
                   From the snow-capped peaks of the Himalayas to the crystal-clear waters of hidden beaches, from dense rainforests to arid deserts, we've mapped the extraordinary places that tell the authentic story of our country.
                 </p>
-                <p className="text-lg text-gray-700">
+                <p className="text-lg text-gray-400">
                   Each destination is chosen not only for its natural beauty but also for the meaningful connections it offers with local communities, wildlife, and age-old traditions.
                 </p>
               </div>
@@ -203,7 +203,7 @@ function DestinationCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+    <div className="bg-black text-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative h-56">
         <Image
           src={image}
@@ -241,7 +241,7 @@ function DestinationCard({
           {location}
         </div>
         <p className="text-gray-600 mb-6 flex-grow">{description}</p>
-        <Button asChild variant="outline" className="mt-auto">
+        <Button asChild variant="outline" className="mt-auto bg-black text-white">
           <Link href={link}>Explore Destination</Link>
         </Button>
       </div>

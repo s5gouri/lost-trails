@@ -9,7 +9,7 @@ export default function CulturalImmersion() {
   return (
     <main>
       <Navbar />
-      <div>
+      <div className="bg-black text-white">
         {/* Hero Section */}
         <div className="relative h-[70vh] min-h-[500px]">
           <Image
@@ -31,11 +31,11 @@ export default function CulturalImmersion() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 py-16 bg-black text-white">
           {/* Introduction */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-6">Authentic Cultural Connections</h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-400">
               Our cultural immersion experiences offer more than just glimpses into traditional communities—they provide opportunities for meaningful exchange and understanding. Stay with indigenous families, participate in daily activities, learn ancient crafts, and witness rituals rarely seen by outsiders. These journeys are carefully designed with respect for local customs and in collaboration with community leaders to ensure authenticity and mutual benefit.
             </p>
           </div>
@@ -149,7 +149,7 @@ export default function CulturalImmersion() {
           </div>
 
           {/* Cultural Etiquette & Respect */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-16">
+          <div className="bg-black text-white rounded-xl p-8 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-4">Cultural Respect & Etiquette</h2>
@@ -266,7 +266,7 @@ function CulturalExperienceCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-black text-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64">
         <Image
           src={image}
