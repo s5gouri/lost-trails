@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Experiences() {
   return (
-    <main>
+    <main className="bg-background text-foreground transition-colors">
       <Navbar />
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">
@@ -36,7 +36,7 @@ export default function Experiences() {
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h2 className="text-2xl font-bold mb-2">Wilderness Treks</h2>
                 <p className="mb-4">Venture deep into untouched forests, mountains, and valleys</p>
-                <Button asChild variant="outline" className="text-white border-white hover:bg-white/20">
+                <Button asChild variant="outline" className="bg-background text-foreground transition-colors hover:bg-white/20">
                   <Link href="/wilderness">Explore Treks</Link>
                 </Button>
               </div>
@@ -56,7 +56,7 @@ export default function Experiences() {
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h2 className="text-2xl font-bold mb-2">Hidden Beaches</h2>
                 <p className="mb-4">Discover secluded coastal paradises away from tourist crowds</p>
-                <Button asChild variant="outline" className="text-white border-white hover:bg-white/20">
+                <Button asChild variant="outline" className="bg-background text-foreground transition-colors hover:bg-white/20">
                   <Link href="/coastal">Explore Beaches</Link>
                 </Button>
               </div>
@@ -76,7 +76,7 @@ export default function Experiences() {
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h2 className="text-2xl font-bold mb-2">Cultural Immersion</h2>
                 <p className="mb-4">Live with indigenous communities and learn their ancient traditions</p>
-                <Button asChild variant="outline" className="text-white border-white hover:bg-white/20">
+                <Button asChild variant="outline" className="bg-background text-foreground transition-colors hover:bg-white/20">
                   <Link href="/cultural">Explore Immersions</Link>
                 </Button>
               </div>
@@ -145,10 +145,10 @@ export default function Experiences() {
           </div>
 
           {/* How It Works */}
-          <div className="bg-gray-50 py-16 px-8 rounded-xl mb-16">
+          <div className="bg-background text-foreground transition-colors py-16 px-8 rounded-xl mb-16">
             <h2 className="text-3xl font-bold mb-12 text-center">How It Works</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="text-center">
+              <div className="text-center border-2 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-primary">1</span>
                 </div>
@@ -157,7 +157,7 @@ export default function Experiences() {
                   Fill out our form to express your interest in joining an expedition
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center border-2 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-primary">2</span>
                 </div>
@@ -166,7 +166,7 @@ export default function Experiences() {
                   We'll schedule a call to understand your preferences and expectations
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center border-2 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-primary">3</span>
                 </div>
@@ -175,7 +175,7 @@ export default function Experiences() {
                   We customize aspects of the journey to match your interests
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center border-2 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-primary">4</span>
                 </div>
@@ -235,7 +235,7 @@ function FeaturedExperienceCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-background text-foreground transition-colors rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-56">
         <Image
           src={image}

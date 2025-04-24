@@ -17,12 +17,13 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "./ui/Theme-toggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white/90 backdrop-blur-sm fixed w-full z-50 shadow-sm">
+    <nav className="bg-background text-foreground transition-colors backdrop-blur-sm fixed w-full z-50 shadow-sm">
       <div className="container mx-auto py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="font-bold text-xl text-primary">
@@ -90,11 +91,18 @@ const Navbar = () => {
             <Button asChild>
               <Link href="/request-invite">Request Invite</Link>
             </Button>
+            <Button asChild>
+              <ThemeToggle/>
+            </Button>
+
           </div>
 
           {/* Mobile Navigation */}
           <div className="lg:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <Button asChild >
+              <ThemeToggle/>
+            </Button>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon">
                   <svg

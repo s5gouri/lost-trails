@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 
 export default function CulturalImmersion() {
   return (
-    <main>
+    <main className="bg-background text-foreground transition-colors">
       <Navbar />
       <div>
         {/* Hero Section */}
@@ -35,7 +35,7 @@ export default function CulturalImmersion() {
           {/* Introduction */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-6">Authentic Cultural Connections</h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-400">
               Our cultural immersion experiences offer more than just glimpses into traditional communities—they provide opportunities for meaningful exchange and understanding. Stay with indigenous families, participate in daily activities, learn ancient crafts, and witness rituals rarely seen by outsiders. These journeys are carefully designed with respect for local customs and in collaboration with community leaders to ensure authenticity and mutual benefit.
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function CulturalImmersion() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Homestay Experiences</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-400">
                 Live with indigenous families in their traditional homes, participating in daily routines and gaining intimate insights into their way of life.
               </p>
             </Card>
@@ -60,7 +60,7 @@ export default function CulturalImmersion() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Ancient Wisdom</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-400">
                 Learn about traditional knowledge systems, healing practices, and sustainable living techniques passed down through generations.
               </p>
             </Card>
@@ -71,7 +71,7 @@ export default function CulturalImmersion() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Artistic Traditions</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-400">
                 Participate in hands-on workshops to learn traditional arts, crafts, music, and dance under the guidance of skilled local artisans.
               </p>
             </Card>
@@ -149,7 +149,7 @@ export default function CulturalImmersion() {
           </div>
 
           {/* Cultural Etiquette & Respect */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-16">
+          <div className="bg-background text-foreground transition-colors border-2 rounded-xl p-8 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-4">Cultural Respect & Etiquette</h2>
@@ -201,7 +201,7 @@ export default function CulturalImmersion() {
           </div>
 
           {/* Testimonial */}
-          <div className="mb-16 bg-primary/5 rounded-xl p-8">
+          <div className="border-2 mb-16 bg-primary/5 rounded-xl p-8">
             <div className="max-w-3xl mx-auto">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="w-32 h-32 relative rounded-full overflow-hidden flex-shrink-0">
@@ -220,14 +220,14 @@ export default function CulturalImmersion() {
                     "The Bastar immersion experience changed how I view indigenous cultures. Living with a Gond family, participating in their daily life, and learning their craft-making techniques provided insights I couldn't have gained any other way. The care Lost Trails takes in facilitating respectful cultural exchange is remarkable—there was no sense of voyeurism, just genuine connection and learning."
                   </p>
                   <p className="font-bold">Sarika Mehta</p>
-                  <p className="text-gray-600">Anthropologist | Bastar Tribal Immersion, November 2022</p>
+                  <p className="text-gray-400">Anthropologist | Bastar Tribal Immersion, November 2022</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* CTA */}
-          <div className="bg-primary/10 rounded-xl p-12 text-center">
+          <div className="border-2 bg-primary/10 rounded-xl p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Experience Living Traditions</h2>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
               Our cultural immersion experiences offer rare opportunities to connect with communities who maintain ancient wisdom and traditions. Request an invite to join one of our small group journeys.
@@ -266,7 +266,7 @@ function CulturalExperienceCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-background text-foreground border rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64">
         <Image
           src={image}
@@ -279,26 +279,26 @@ function CulturalExperienceCard({
         <h3 className="font-bold text-2xl mb-2">{title}</h3>
 
         <div className="grid grid-cols-2 gap-4 mb-4">
-          <div className="flex items-center text-gray-600">
+          <div className="flex items-center text-gray-400">
             <svg className="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <span>{location}</span>
           </div>
-          <div className="flex items-center text-gray-600">
+          <div className="flex items-center text-gray-400">
             <svg className="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span>{duration}</span>
           </div>
-          <div className="flex items-center text-gray-600">
+          <div className="flex items-center text-gray-400">
             <svg className="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
             <span>{difficulty}</span>
           </div>
-          <div className="flex items-center text-gray-600">
+          <div className="flex items-center text-gray-400">
             <svg className="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
@@ -306,7 +306,7 @@ function CulturalExperienceCard({
           </div>
         </div>
 
-        <p className="text-gray-700 mb-4">{description}</p>
+        <p className="text-gray-400 mb-4">{description}</p>
 
         <div className="mb-6">
           <h4 className="font-bold text-lg mb-2">Experience Highlights:</h4>

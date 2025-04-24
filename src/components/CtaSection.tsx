@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const CtaSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-background text-foreground transition-colors">
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -19,7 +19,7 @@ const CtaSection = () => {
       />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center text-white">
+        <div className="max-w-4xl mx-auto text-center ">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -65,12 +65,12 @@ const CtaSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-12 text-white/80 text-lg font-light italic"
+            className="mt-12  text-lg font-light italic"
           >
             <p>
               "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience."
             </p>
-            <p className="mt-2 text-sm text-white/60">— Eleanor Roosevelt</p>
+            <p className="mt-2 text-sm ">— Eleanor Roosevelt</p>
           </motion.div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Blog() {
   return (
-    <main>
+    <main className="bg-background text-foreground transition-colors">
       <Navbar />
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">
@@ -15,13 +15,13 @@ export default function Blog() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Trail Stories
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-400">
               Insights, tales, and wisdom from our explorations of the road less traveled
             </p>
           </div>
 
           {/* Featured Post */}
-          <div className="relative rounded-xl overflow-hidden mb-16">
+          <div className="bg-background text-foreground transition-colors relative rounded-xl overflow-hidden mb-16">
             <div className="relative h-[500px]">
               <Image
                 src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
@@ -132,7 +132,7 @@ export default function Blog() {
           </div>
 
           {/* Testimonial */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-16">
+          <div className="bg-background text-foreground transition-colors border-2 rounded-xl p-8 mb-16">
             <div className="max-w-3xl mx-auto text-center">
               <svg className="w-12 h-12 text-primary/30 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -158,7 +158,7 @@ export default function Blog() {
           </div>
 
           {/* Subscribe Section */}
-          <div className="bg-primary/10 rounded-xl p-12 text-center">
+          <div className="border-2 bg-primary/10 rounded-xl p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Never Miss a Story</h2>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
               Subscribe to our newsletter to receive the latest stories, travel tips, and expedition announcements directly in your inbox.
@@ -198,7 +198,7 @@ function BlogPostCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+    <div className="bg-background text-foreground border rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative h-56">
         <Image
           src={image}

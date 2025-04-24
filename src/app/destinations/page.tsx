@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Destinations() {
   return (
-    <main>
+    <main className="bg-background text-foreground transition-colors">
       <Navbar />
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">
@@ -15,7 +15,7 @@ export default function Destinations() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Destinations
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-400">
               Discover the lesser-known treasures of our country that we've carefully selected for your extraordinary adventures
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function Destinations() {
           </div>
 
           {/* Map Section */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-16">
+          <div className="bg-background text-foreground transition-colors border-2 rounded-xl p-8 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-4">Exploring the Unexplored</h2>
@@ -165,7 +165,7 @@ export default function Destinations() {
           </div>
 
           {/* Subscribe Section */}
-          <div className="bg-primary/10 rounded-xl p-12 text-center">
+          <div className="border-2 bg-primary/10 rounded-xl p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Stay Updated on New Destinations</h2>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
               We're constantly exploring and adding new destinations to our portfolio. Subscribe to our newsletter to be the first to know when we discover something extraordinary.
@@ -203,7 +203,7 @@ function DestinationCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+    <div className="bg-background text-foreground border rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative h-56">
         <Image
           src={image}
@@ -217,7 +217,7 @@ function DestinationCard({
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="font-bold text-xl mb-2">{title}</h3>
-        <div className="flex items-center mb-4 text-gray-600">
+        <div className="flex items-center mb-4 text-gray-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 mr-1"
@@ -240,7 +240,7 @@ function DestinationCard({
           </svg>
           {location}
         </div>
-        <p className="text-gray-600 mb-6 flex-grow">{description}</p>
+        <p className="text-gray-400 mb-6 flex-grow">{description}</p>
         <Button asChild variant="outline" className="mt-auto">
           <Link href={link}>Explore Destination</Link>
         </Button>

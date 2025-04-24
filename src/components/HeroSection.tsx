@@ -7,7 +7,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section
-      className="hero-section"
+      className="hero-section bg-background text-foreground transition-colors"
       style={{
         backgroundImage:
           "url('https://images.unsplash.com/photo-1540202404-fca3504f0b89?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920')",

@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
-.location-overlay {
+/* .location-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -120,4 +120,15 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
   padding: 20px;
   color: white;
+} */
+
+
+.location-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, hsl(var(--background)) 0%, transparent 100%);
+  padding: 20px;
+  color: hsl(var(--foreground));
 }

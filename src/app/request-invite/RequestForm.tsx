@@ -51,7 +51,7 @@ const RequestForm = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-white rounded-lg shadow-lg p-8 text-center"
+        className=" rounded-lg shadow-lg p-8 text-center"
       >
         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <svg
@@ -88,7 +88,7 @@ const RequestForm = () => {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-8">
+    <div className="bg-background text-foreground transition-colors border-2 rounded-lg shadow-lg p-8">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

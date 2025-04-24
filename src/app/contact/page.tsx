@@ -1,13 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ContactForm from "@/components/ContactForm";
+// import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <main>
+    <main className="bg-background text-foreground transition-colors">
       <Navbar />
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">
@@ -25,11 +25,11 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <div>
               <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
-              <ContactForm />
+              {/* <ContactForm /> */}
             </div>
             <div>
               <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-              <div className="bg-gray-50 rounded-lg p-8">
+              <div className=" border-2 rounded-lg p-8">
                 <div className="mb-8">
                   <h3 className="text-lg font-bold mb-2">Our Office</h3>
                   <p className="text-gray-700 mb-4">
@@ -113,28 +113,28 @@ export default function Contact() {
           </div>
 
           {/* FAQ Section */}
-          <div className="mb-16">
+          <div className="mb-16 bg-background text-foreground transition-colors">
             <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
             <div className="space-y-4">
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="border-2 rounded-lg p-6">
                 <h3 className="text-lg font-bold mb-2">How do I request an invite for an experience?</h3>
                 <p className="text-gray-700">
                   You can request an invite by filling out the form on our "Request Invite" page. Our team will review your request and get back to you within 48 hours to discuss your interests and preferences.
                 </p>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="border-2 rounded-lg p-6">
                 <h3 className="text-lg font-bold mb-2">What is the typical group size for your experiences?</h3>
                 <p className="text-gray-700">
                   We keep our groups intentionally small, typically 6-12 people, to ensure quality experiences and minimal environmental impact. For certain sensitive cultural immersions, groups may be even smaller.
                 </p>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="border-2 rounded-lg p-6">
                 <h3 className="text-lg font-bold mb-2">How physically demanding are your adventures?</h3>
                 <p className="text-gray-700">
                   Our experiences vary in physical intensity. Each experience page clearly indicates the difficulty level and physical requirements. We offer options ranging from easy cultural immersions to challenging wilderness treks.
                 </p>
               </div>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="border-2 rounded-lg p-6">
                 <h3 className="text-lg font-bold mb-2">What is your cancellation policy?</h3>
                 <p className="text-gray-700">
                   We understand plans can change. Cancellations made 45 days or more before the experience date receive a full refund minus a small administrative fee. Cancellations between 45-30 days receive a 50% refund. Unfortunately, we cannot offer refunds for cancellations less than 30 days before the experience.
@@ -144,7 +144,7 @@ export default function Contact() {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-primary/10 rounded-xl p-12 text-center">
+          <div className="border-2 bg-primary/10 rounded-xl p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Start Your Adventure?</h2>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
               Don't just dream about extraordinary experiences—make them happen. Request an invite today and begin your journey with Lost Trails.

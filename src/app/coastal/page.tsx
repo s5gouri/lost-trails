@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 
 export default function CoastalExperiences() {
   return (
-    <main>
+    <main className="bg-background text-foreground transition-colors">
       <Navbar />
       <div>
         {/* Hero Section */}
@@ -35,7 +35,7 @@ export default function CoastalExperiences() {
           {/* Introduction */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold mb-6">Undiscovered Coastal Wonders</h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-400">
               Our country's coastline stretches thousands of kilometers, hiding countless pristine beaches and marine ecosystems that remain virtually unknown to the typical traveler. Lost Trails takes you beyond the crowded tourist beaches to discover secluded coves, untouched marine life, and authentic coastal communities that maintain traditional fishing and seafaring practices.
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function CoastalExperiences() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Virgin Beaches</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-400">
                 Experience beaches with no footprints in the sand, pristine waters, and untouched coral reefs just offshore.
               </p>
             </Card>
@@ -60,7 +60,7 @@ export default function CoastalExperiences() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Marine Adventures</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-400">
                 Snorkel among vibrant coral reefs, kayak through hidden lagoons, and observe rare marine life in pristine waters.
               </p>
             </Card>
@@ -71,7 +71,7 @@ export default function CoastalExperiences() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Coastal Communities</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-400">
                 Connect with fishing villages and island communities that maintain traditional lifestyles and maritime practices.
               </p>
             </Card>
@@ -149,7 +149,7 @@ export default function CoastalExperiences() {
           </div>
 
           {/* Marine Life Section */}
-          <div className="bg-gray-50 rounded-xl p-8 mb-16">
+          <div className="bg-background text-foreground transition-colors border-2 rounded-xl p-8 mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
@@ -161,7 +161,7 @@ export default function CoastalExperiences() {
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-4">Marine Conservation & Biodiversity</h2>
-                <p className="text-lg text-gray-700 mb-6">
+                <p className="text-lg text-gray-400 mb-6">
                   Our coastal experiences are designed with marine conservation at their core. You'll have the opportunity to:
                 </p>
                 <ul className="space-y-4 mb-6">
@@ -171,7 +171,7 @@ export default function CoastalExperiences() {
                     </svg>
                     <div>
                       <span className="font-bold">Participate in coral monitoring</span>
-                      <p className="text-gray-700">Help researchers track the health of coral reefs and document marine species.</p>
+                      <p className="text-gray-400">Help researchers track the health of coral reefs and document marine species.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -180,7 +180,7 @@ export default function CoastalExperiences() {
                     </svg>
                     <div>
                       <span className="font-bold">Beach clean-up initiatives</span>
-                      <p className="text-gray-700">Join local communities in maintaining the pristine nature of these hidden beaches.</p>
+                      <p className="text-gray-400">Join local communities in maintaining the pristine nature of these hidden beaches.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -189,11 +189,11 @@ export default function CoastalExperiences() {
                     </svg>
                     <div>
                       <span className="font-bold">Sustainable fishing practices</span>
-                      <p className="text-gray-700">Learn traditional fishing methods that have been used sustainably for generations.</p>
+                      <p className="text-gray-400">Learn traditional fishing methods that have been used sustainably for generations.</p>
                     </div>
                   </li>
                 </ul>
-                <p className="text-lg text-gray-700">
+                <p className="text-lg text-gray-400">
                   A portion of the proceeds from our coastal experiences is directly contributed to marine conservation efforts in the regions we visit.
                 </p>
               </div>
@@ -201,7 +201,7 @@ export default function CoastalExperiences() {
           </div>
 
           {/* Testimonial */}
-          <div className="mb-16 bg-primary/5 rounded-xl p-8">
+          <div className="mb-16 bg-primary/5 border rounded-xl p-8">
             <div className="max-w-3xl mx-auto">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="w-32 h-32 relative rounded-full overflow-hidden flex-shrink-0">
@@ -216,20 +216,20 @@ export default function CoastalExperiences() {
                   <svg className="w-10 h-10 text-primary/30 mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
-                  <p className="text-lg text-gray-700 mb-4">
+                  <p className="text-lg text-gray-400 mb-4">
                     "The Hidden Coves of Karnataka experience was truly magical. We visited beaches I never knew existed, despite having lived in India all my life. Snorkeling at Netrani Island was the highlight—the diversity of marine life was incredible, and our guide was extremely knowledgeable about the ecosystem. The evening spent camping on a private beach under the stars is a memory I'll cherish forever."
                   </p>
                   <p className="font-bold">Meera Patel</p>
-                  <p className="text-gray-600">Marine Biologist | Karnataka Hidden Coves, January 2023</p>
+                  <p className="text-gray-400">Marine Biologist | Karnataka Hidden Coves, January 2023</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* CTA */}
-          <div className="bg-primary/10 rounded-xl p-12 text-center">
+          <div className="bg-primary/10 rounded-xl border p-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Discover Coastal Paradise</h2>
-            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
               Our coastal experiences provide exclusive access to some of the most pristine and secluded beaches in the country. Request an invite to join one of our small group expeditions.
             </p>
             <Button asChild size="lg">
@@ -266,7 +266,7 @@ function CoastalExperienceCard({
   link: string;
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-background text-foreground  border rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64">
         <Image
           src={image}
@@ -279,26 +279,26 @@ function CoastalExperienceCard({
         <h3 className="font-bold text-2xl mb-2">{title}</h3>
 
         <div className="grid grid-cols-2 gap-4 mb-4">
-          <div className="flex items-center text-gray-600">
+          <div className="flex items-center text-gray-400">
             <svg className="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <span>{location}</span>
           </div>
-          <div className="flex items-center text-gray-600">
+          <div className="flex items-center text-gray-400">
             <svg className="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span>{duration}</span>
           </div>
-          <div className="flex items-center text-gray-600">
+          <div className="flex items-center text-gray-400">
             <svg className="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
             <span>{difficulty}</span>
           </div>
-          <div className="flex items-center text-gray-600">
+          <div className="flex items-center text-gray-400">
             <svg className="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
@@ -306,7 +306,7 @@ function CoastalExperienceCard({
           </div>
         </div>
 
-        <p className="text-gray-700 mb-4">{description}</p>
+        <p className="text-gray-400 mb-4">{description}</p>
 
         <div className="mb-6">
           <h4 className="font-bold text-lg mb-2">Experience Highlights:</h4>
