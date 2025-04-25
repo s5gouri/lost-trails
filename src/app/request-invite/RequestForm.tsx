@@ -16,6 +16,9 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
+import axios from "axios";
+import {toast, Toaster} from "sonner";
+
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -39,9 +42,18 @@ const RequestForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+ async function onSubmit(values: z.infer<typeof formSchema>) {
     // In a real app, this would submit to a backend
     console.log(values);
+    const response=await axios.post("/api/submit", values);
+    if (response.data.success ) {
+      toast.success("Request submitted successfully!");
+      // console.log("Data submitted successfully:", response.data);
+    } else {
+      toast.error("There was an error submitting the form. Please try again.");
+
+      console.error("Error submitting data:", response.statusText);
+    }
     setIsSubmitted(true);
   }
 
