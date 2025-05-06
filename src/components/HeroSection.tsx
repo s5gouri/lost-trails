@@ -23,7 +23,7 @@ const HeroSection = () => {
             DISCOVER THE UNEXPLORED
           </h1>
           <p className="text-xl md:text-2xl mb-8">
-            20 Adventurers x 7 Days x 1 Secret Destination
+            Experience The Real Travel
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="text-md">

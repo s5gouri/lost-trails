@@ -3,21 +3,34 @@ import { google } from "googleapis";
 export async function POST(req: Request) {
   const data = await req.json();
   console.log(data);
-  const update=await appendToSheet(data);
-if (update.success === true) {
-  return NextResponse.json({ success:true,message: "Data received successfully" });
-} else {
-  return NextResponse.json({ success: false, message: "Failed to append data", error: update.error });
-}
-  // return NextResponse.json({ message: "Data received successfully" });   
+  const update = await appendToSheet(data);
+  if (update.success === true) {
+    return NextResponse.json({
+      success: true,
+      message: "Data received successfully",
+    });
+  } else {
+    console.log("Error:", update.error);
+    return NextResponse.json({
+      success: false,
+      message: "Failed to append data",
+      error: update.error,
+    });
+  }
+  // return NextResponse.json({ message: "Data received successfully" });
 }
 interface reqdata {
   name: string;
   email: string;
   phone: string;
-  preferredDestination: string;
-  travelExperience: string;
-  // Add other fields as needed
+  residence: string;
+  age: string;
+  whatUdo: string;
+  whyinterested: string;
+  vibe: [string];
+  somethinglikebefore: string;
+  sociallink: string;
+  howuhear: string;
 }
 async function appendToSheet(formData: reqdata) {
   // Load the service account credentials
@@ -34,7 +47,8 @@ async function appendToSheet(formData: reqdata) {
 
   // Spreadsheet ID and range (e.g., Sheet1!A:C to append to columns A, B, C)
   const spreadsheetId = process.env.SPREADSHEET_ID;
-  const range = "Sheet1!A:E";
+  const range = "Sheet1!A:L";
+  const vibeString = formData.vibe.join(", ");
 
   // Form data to append
   const values = [
@@ -42,8 +56,14 @@ async function appendToSheet(formData: reqdata) {
       formData.name,
       formData.email,
       formData.phone,
-      formData.preferredDestination,
-      formData.travelExperience,
+      formData.residence,
+      formData.age,
+      formData.whatUdo,
+      formData.whyinterested,
+      vibeString,
+      formData.somethinglikebefore,
+      formData.sociallink,
+      formData.howuhear,
       new Date().toISOString(), // Optional: Add timestamp
     ],
   ];

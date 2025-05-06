@@ -8,7 +8,7 @@ import Image from "next/image";
 const destinations = [
   {
     id: 1,
-    name: "Dzukou Valley",
+    name: "Jibhi",
     location: "Nagaland / June 2025",
     description:
       "A hidden paradise nestled between Nagaland and Manipur. Explore vibrant valleys with rare flowers, trek through untouched trails and connect with local tribes who've preserved their culture for centuries.",
@@ -18,7 +18,7 @@ const destinations = [
   },
   {
     id: 2,
-    name: "Spiti Valley",
+    name: "Sethan",
     location: "Himachal / July 2025",
     description:
       "Experience the stark beauty of this high-altitude desert. Stay in remote villages accessible only by foot, witness ancient monasteries, and stargaze under the clearest skies you've ever seen.",
@@ -28,7 +28,7 @@ const destinations = [
   },
   {
     id: 3,
-    name: "Andaman Islands",
+    name: "Shangarh",
     location: "Andaman / September 2025",
     description:
       "Beyond the tourist hotspots lie secluded islands with pristine beaches. Kayak through mangrove forests, dive in crystal-clear waters with vibrant marine life, and camp under the stars on uninhabited shores.",

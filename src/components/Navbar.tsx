@@ -45,7 +45,7 @@ const Navbar = () => {
                             href="/experiences"
                           >
                             <div className="mb-2 text-lg font-medium text-white">
-                              Premium Experiences
+                             Lost Trails Journeys
                             </div>
                             <p className="text-sm leading-tight text-white/90">
                               Curated journeys to the most breathtaking unexplored places
@@ -53,13 +53,13 @@ const Navbar = () => {
                           </a>
                         </NavigationMenuLink>
                       </li>
-                      <ListItem href="/wilderness" title="Wilderness Treks">
+                      <ListItem href="/wilderness" title="Offbeat Corporate">
                         Explore untouched forests and mountains
                       </ListItem>
-                      <ListItem href="/coastal" title="Hidden Beaches">
+                      <ListItem href="/coastal" title="Curated Trips">
                         Discover secluded coastal paradises
                       </ListItem>
-                      <ListItem href="/cultural" title="Cultural Immersion">
+                      <ListItem href="/cultural" title="Custom Experiences">
                         Live with indigenous communities
                       </ListItem>
                     </ul>
